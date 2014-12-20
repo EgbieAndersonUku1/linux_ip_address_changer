@@ -2,14 +2,16 @@
 #
 # 	Creator 	: Egbie Anderson
 # 	Purpose 	: interface changer
-# 	Language 	: python 2.65
+# 	Language 	: python 2.xx
 #       OS              : <Linux >
-#       Date  created   : 6 may 2013
+#       Date  created   : 6 may 2012
 #       
 #       Original written to be used with Backtrack but can be used
 #       with any linux box. The purpose for the script is to set
 #       my dnaymic ip address into a static ip address enabling me to sync
-#       my many virtual machines into one network.
+#       my many virtual machines into one network. This will enable to
+#       learn how to hack using backtrack
+#
 #######################################################################
 
 
@@ -44,8 +46,7 @@ class ChangeInterfaces(object):
 
           print "[+] backup file does not exist, please wait creating backup file"
           
-          # take the orignal interface file and copy it into a new interface file 
-          # named interface_orginal.backup
+          # take the orignal interface file and makes a backup copy
           shutil.copyfile("/etc/network/interface", "/etc/network/interface_file.backup")
           print "[+] backup file successful created"
 
