@@ -33,7 +33,7 @@ class ChangeInterfaces(object):
         
         # the location of the interface file
         self.interface_file = "/etc/network/interfaces" # interface file in a linux machine
-        self.file_location = "/root/Desktop/"           # location for files in Backtrack
+        self.file_location = "/root/Desktop/"           # location to store the backup interface file in Backtrack
 
     
     def create_backup(self):
@@ -42,7 +42,7 @@ class ChangeInterfaces(object):
         self.backup_name = 'interface_file.backup'
         
         print "\n[+] please wait checking if there is a backup up file"
-        if os.path.exists(os.path.join("/etc/network", self.backup_name)):
+        if os.path.exists(os.path.join(self.file_location, self.backup_name)):
 
           print "[+] backup file does not exist, please wait creating backup file"
           
@@ -93,7 +93,6 @@ def main():
       exit(0)
    else:
       
-     
      changeInterfaces.replace_file(options.interface_file) # replace the orignal interface file with the new interface
      changeInterfaces.reboot_network()                     # reboots the network to start the new interface
 	
