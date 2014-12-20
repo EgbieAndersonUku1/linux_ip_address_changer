@@ -30,7 +30,7 @@ class ChangeInterfaces(object):
         
         # the location of the interface file
         self.interface_file = "/etc/network/interfaces"
-        self.file_location = "/root/Desktop/"
+        self.file_location = "/root/Desktop/"          # location for file in Backtrack
 
     
     def create_backup(self):
