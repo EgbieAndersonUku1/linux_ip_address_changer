@@ -92,11 +92,9 @@ def main():
       exit(0)
    else:
       
-     # replace the orignal interface file with the new interface file
-     changeInterfaces.replace_file(options.interface_file)
      
-     # reboots the network to start the new interface
-     changeInterfaces.reboot_network()
+     changeInterfaces.replace_file(options.interface_file) # replace the orignal interface file with the new interface
+     changeInterfaces.reboot_network()                     # reboots the network to start the new interface
 	
 # when invoked calls the main function
 if __name__ == "__main__":
