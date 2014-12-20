@@ -31,18 +31,17 @@ class ChangeInterfaces(object):
         """the constructor method"""
         
         # the location of the interface file
-        self.interface_file = "/etc/network/interfaces"
-        self.file_location = "/root/Desktop/"          # location for file in Backtrack
+        self.interface_file = "/etc/network/interfaces" # interface file in a linux machine
+        self.file_location = "/root/Desktop/"           # location for file in Backtrack
 
     
     def create_backup(self):
         """create a backup of the orignal file interface"""
-        
-        self.files = os.listdir("/etc/network")
+       
         self.backup_name = 'interface_file.backup'
         
         print "\n[+] please wait checking if there is a backup up file"
-        if self.backup_name not in self.files:
+        if os.path.exists(os.path.join("/etc/network", self.backup_name)):
 
           print "[+] backup file does not exist, please wait creating backup file"
           
