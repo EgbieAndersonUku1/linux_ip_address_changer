@@ -10,7 +10,7 @@
 #       with any linux box. The purpose for the script is to set
 #       my dnaymic ip address into a static ip address enabling me to sync
 #       my many virtual machines into one network. This will enable to
-#       learn how to hack using backtrack
+#       learn how to hack using backtrack.
 #
 #######################################################################
 
@@ -32,7 +32,7 @@ class ChangeInterfaces(object):
         
         # the location of the interface file
         self.interface_file = "/etc/network/interfaces" # interface file in a linux machine
-        self.file_location = "/root/Desktop/"           # location for file in Backtrack
+        self.file_location = "/root/Desktop/"           # location for files in Backtrack
 
     
     def create_backup(self):
@@ -46,7 +46,7 @@ class ChangeInterfaces(object):
           print "[+] backup file does not exist, please wait creating backup file"
           
           # take the orignal interface file and makes a backup copy
-          shutil.copyfile("/etc/network/interface", "/etc/network/interface_file.backup")
+          shutil.copyfile(self.interface_file, "/etc/network/interface_file.backup")
           print "[+] backup file successful created"
 
         else:
