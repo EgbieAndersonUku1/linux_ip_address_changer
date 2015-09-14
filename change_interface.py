@@ -1,6 +1,6 @@
 ####################################################################
 #
-# 	Creator 	: Egbie Anderson
+# 	Creator 	: Egbie 
 # 	Purpose 	: interface changer
 # 	Language 	: python 2.xx
 #       OS              : <Linux >
