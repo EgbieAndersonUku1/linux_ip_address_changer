@@ -9,9 +9,7 @@
 #       Original written to be used with Backtrack but can be used
 #       with any linux box. The purpose for the script is to set
 #       my dnaymic ip address into a static ip address enabling me to sync
-#       my many virtual machines into one network. And also allow me to go
-#       back to my original dynamic ip address. Purpose this will enable to
-#       learn how to hack using backtrack.
+#       my many virtual machines into one network. 
 #
 #######################################################################
 
